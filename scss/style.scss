@@ -331,29 +331,34 @@ h1, h2, h3, h4, h5,
 }
 
 
-.hero{
-	h3.vr{
-		writing-mode: vertical-lr;
-	  transform: rotate(180deg);
-	  text-orientation: sideways;
-	  text-align:center;
-	  text-orientation: sideways;
-	  margin: 0rem;
-	  position: absolute;
-	  top: 0;
-	  left: 4em;
-	  height: 100%;
-	  text-transform: uppercase;
-	  font-weight: 500;
-	  letter-spacing: 5px;
-	  font-size: 16px;
-	  z-index: 1;
-	  color: rgba(0,0,0,.3);
-	  @include media-breakpoint-down(lg){
-	  	opacity: 0;
-	  	display: none;
-	  }
-	}
+.hero-intro {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 650px;
+  white-space: normal;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.home-slider .slider-item .text {
+  max-width: 700px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.home-slider .slider-item,
+.home-slider .one-forth,
+.home-slider .one-third {
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .hero-intro {
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 100%;
+  }
 }
 
 //OWL CAROUSEL
